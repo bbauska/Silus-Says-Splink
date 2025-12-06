@@ -1,0 +1,113 @@
+/* ./css/styles.css in silus-counter-4 of silus-counter-4.bauska.org */
+body {
+  display: flex;
+  justify-content: center;  /* center; */
+  align-items: center;
+}
+.back {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 700px;  /* 300%; */
+  background-color: rgba(255, 0, 0, .7);  /* 65, 105, 224 .7 */
+  border-radius: 30px;  /* 10px; */
+  box-shadow: 0 0 8px 0 rgb(3, 75, 85);
+  margin-top: 100px;  /* 100px */
+}
+  
+#clicker {
+  width: 200px;  /* 200px */
+  height: 50px;  /* 50px */
+  border-radius: 10px;
+  box-shadow: 0 0 8px 0 rgb(255, 255, 185);  /* 3, 75, 185 */
+  background-color: rgba(10, 4, 90, 0.6);
+  color: rgb(255, 255, 255);
+  margin-bottom: 50px; /* 100px */
+  transition: 2s;
+}
+#clicker:hover {
+  animation-name: grow;
+  animation-duration: 60s;
+}
+
+h1 {
+  color: rgb(255, 255, 255);
+  font-size: 64px;  /* 64px; */
+  justify-content: center;
+  letter-spacing: 0.1em;
+}
+h2 {
+  font-size: 32px;
+  justify-content: center;
+  color: rgb(255, 255, 255);
+}
+h3 {
+  font-size: 26px;
+  justify-content; center;
+  background-color: darkgreen;
+  color: rgb(200,200,200);
+}
+h4 {
+  color: darkgreen;
+  font-size: 14px;
+}
+
+@keyframes grow {
+  0% {transform: scale(1);}
+  25% {transform: scale(1.4);}
+  50% {transform: scale(1);}
+  75% {transform: scale(1.4);}
+  100% {transform: scale(1);}
+}
+
+<!-- confetti-container & more -->
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+
+#confetti-container {
+  position: absolute;  /* absolute */
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;  /* 100vh; */
+}
+
+.card {
+  background-color: #fff;
+  max-width: 700px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  padding: 2rem;
+}
+.card p {
+  font-size: 1.2rem;
+  text-align: center;
+  margin: 0;
+  padding: 10px;
+}
+.confetti {
+  position: absolute;
+  top: 0;
+  font-size: 1.3rem;  /* 1.6 */
+  animation: confetti-fall linear 5s infinite;
+}
+
+@keyframes confetti-fall {
+  0% {
+    transform: translateY(-100%) rotate(0);
+  }
+  100% {
+    transform: translateY(100vh) rotate(360deg);
+  }
+}
+<!-- shadow/confetti -->
+button {
+  margin-bottom: 10px;
+  display: block;
+}
+canvas {
+  width: 700px;  /* 500px; */
+  height: 300px;
+  border: 1px solid blue;
+}
