@@ -10,7 +10,7 @@ body {
   align-items: center;
   flex-direction: column;
   width: 700px;  /* 300%; */
-  background-color: rgba(199, 110, 0, .7);  /* orange */
+  background-color: rgba(255, 140, 0, .7);  /* orange */
   border-radius: 30px;  /* 10px; */
   box-shadow: 0 0 8px 0 rgb(3, 75, 85);
   margin-top: 100px;  /* 100px */
